@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <!-- Required elements-->
+        <id>Dinazor.Module.UserManagement.NET</id>
+        <version>1.0.0</version>
+        <description>Dinazor User Management Dot Net Project</description>
+        <authors>Dinazor</authors>
+		
+		<title>Dinazor User Management .Net</title>
+
+        <!-- Optional elements -->
+        <!-- ... -->
+    </metadata>
+	<files>
+    <file src="bin\Release\Dinazor.Module.UserManagement.dll" target="lib\net45" />
+	<file src="bin\Release\Dinazor.Module.UserManagement.pdb" target="lib\net45" />
+  </files>
+    <!-- Optional 'files' node -->
+</package>

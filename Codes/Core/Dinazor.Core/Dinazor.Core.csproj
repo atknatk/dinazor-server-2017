@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1C976950-2AF4-4941-89B1-8108C244A705}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dinazor.Core</RootNamespace>
+    <AssemblyName>Dinazor.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Castle.Core.3.3.0\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Castle.Windsor.3.3.0\lib\net45\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.DynamicFilters, Version=2.10.0.0, Culture=neutral, PublicKeyToken=146423a1b8d60775, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\EntityFramework.DynamicFilters.2.10.0\lib\net40\EntityFramework.DynamicFilters.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="LinqKit, Version=1.1.9.0, Culture=neutral, PublicKeyToken=bc217f8844052a91, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\LinqKit.1.1.9.0\lib\net45\LinqKit.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Security, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Npgsql.2.2.7\lib\net45\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql, Version=2.2.7.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Npgsql.2.2.7\lib\net45\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql.EntityFramework, Version=2.2.7.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Npgsql.EntityFramework.2.2.7\lib\net45\Npgsql.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Collections.Immutable, Version=1.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\System.Collections.Immutable.1.4.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\AppStart\ExceptionHandling.cs" />
+    <Compile Include="Common\AppStart\RedirectDinazorResult.cs" />
+    <Compile Include="Common\AppStart\RouteConfig.cs" />
+    <Compile Include="Common\AppStart\SessionConfig.cs" />
+    <Compile Include="Common\Attributes\Annotations.cs" />
+    <Compile Include="Common\Attributes\DinazorBasicAuthenticationAttribute.cs" />
+    <Compile Include="Common\Attributes\PagingAttribute.cs" />
+    <Compile Include="Common\Constants\DinazorConstant.cs" />
+    <Compile Include="Common\Enum\DependencyLifeStyle.cs" />
+    <Compile Include="Common\Enum\DinazorEntityState.cs" />
+    <Compile Include="Common\Enum\ResultStatus.cs" />
+    <Compile Include="Common\Enum\Role.cs" />
+    <Compile Include="Common\Extensions\Extensions.cs" />
+    <Compile Include="Common\Extensions\LinqExtension.cs" />
+    <Compile Include="Common\Extensions\PropertyExpressionsHelper.cs" />
+    <Compile Include="Common\Extensions\SpecialCharactersExtension.cs" />
+    <Compile Include="Common\Generator\TokenGenerator.cs" />
+    <Compile Include="Common\Helper\AssemblyHelper.cs" />
+    <Compile Include="Common\Helper\Check.cs" />
+    <Compile Include="Common\Helper\CustomAttributeHelper.cs" />
+    <Compile Include="Common\Model\DinazorResult.cs" />
+    <Compile Include="Database\Attributes\IgnoreOnUpdateAttribute.cs" />
+    <Compile Include="Database\Context\DinazorContext.cs" />
+    <Compile Include="Database\Entity\City.cs" />
+    <Compile Include="Database\Entity\Configuration\Configuration.cs" />
+    <Compile Include="Database\Entity\Crm\Client.cs" />
+    <Compile Include="Database\Entity\Crm\LicenceKey.cs" />
+    <Compile Include="Database\Entity\Crm\LicencePool.cs" />
+    <Compile Include="Database\Entity\Crm\MacAddress.cs" />
+    <Compile Include="Database\Entity\Crm\Organization.cs" />
+    <Compile Include="Database\Entity\Crm\OrganizationLicence.cs" />
+    <Compile Include="Database\Entity\DinazorLog.cs" />
+    <Compile Include="Database\Entity\ModuleEnum.cs" />
+    <Compile Include="Database\Entity\Town.cs" />
+    <Compile Include="Database\Entity\User\Authorization.cs" />
+    <Compile Include="Database\Entity\User\RelRoleRoleGroup.cs" />
+    <Compile Include="Database\Entity\User\RelUserUserGroup.cs" />
+    <Compile Include="Database\Entity\User\Role.cs" />
+    <Compile Include="Database\Entity\User\RoleGroup.cs" />
+    <Compile Include="Database\Entity\User\User.cs" />
+    <Compile Include="Database\Entity\User\UserGroup.cs" />
+    <Compile Include="Database\Paging\PagingFilter.cs" />
+    <Compile Include="Database\Paging\PagingGenericTypeHelper.cs" />
+    <Compile Include="Database\Paging\PagingParser.cs" />
+    <Compile Include="Database\Paging\PagingPropertyFilter.cs" />
+    <Compile Include="Database\Paging\PagingPropertySorter.cs" />
+    <Compile Include="Database\Paging\PagingSorter.cs" />
+    <Compile Include="DinazorKernelModule.cs" />
+    <Compile Include="Dto\Abstracts\BaseDto.cs" />
+    <Compile Include="Dto\Abstracts\DtoProperty.cs" />
+    <Compile Include="Dto\CityDto.cs" />
+    <Compile Include="Dto\Configuration\ConfigurationDto.cs" />
+    <Compile Include="Dto\Crm\ClientDto.cs" />
+    <Compile Include="Dto\Crm\LicenceKeyDto.cs" />
+    <Compile Include="Dto\Crm\OrganizationDto.cs" />
+    <Compile Include="Dto\Crm\OrganizationLicenceDto.cs" />
+    <Compile Include="Dto\Interfaces\IDto.cs" />
+    <Compile Include="Dto\Interfaces\IDtoProperty.cs" />
+    <Compile Include="Dto\Interfaces\IPagingDto.cs" />
+    <Compile Include="Dto\Interfaces\ISelectWithJoinDto.cs" />
+    <Compile Include="Dto\ModuleDto.cs" />
+    <Compile Include="Dto\RoleDto.cs" />
+    <Compile Include="Dto\RoleGroupDto.cs" />
+    <Compile Include="Dto\TownDto.cs" />
+    <Compile Include="Dto\UserDto.cs" />
+    <Compile Include="Dto\UserGroupDto.cs" />
+    <Compile Include="Exceptions\DinazorAuthorizationException.cs" />
+    <Compile Include="Exceptions\DinazorException.cs" />
+    <Compile Include="Exceptions\GlobalExceptionFilter.cs" />
+    <Compile Include="GenericOperation\Abstracts\DinazorOperation.cs" />
+    <Compile Include="GenericOperation\Abstracts\DinazorOperationHelper.cs" />
+    <Compile Include="GenericOperation\Abstracts\RetrieveOperation.cs" />
+    <Compile Include="GenericOperation\Abstracts\SoftDeletableRetrieveOperation.cs" />
+    <Compile Include="GenericOperation\Controller\DinazorController.cs" />
+    <Compile Include="GenericOperation\Controller\IDeleteController.cs" />
+    <Compile Include="GenericOperation\Controller\IDinazorCrudController.cs" />
+    <Compile Include="GenericOperation\Controller\IPagingController.cs" />
+    <Compile Include="GenericOperation\Controller\IRetrieveController.cs" />
+    <Compile Include="GenericOperation\Controller\ISaveController.cs" />
+    <Compile Include="GenericOperation\Controller\ISaveListController.cs" />
+    <Compile Include="GenericOperation\Controller\ISelectWithJoinController.cs" />
+    <Compile Include="GenericOperation\Controller\IUpdateController.cs" />
+    <Compile Include="GenericOperation\Interfaces\IDinazorCrudManager.cs" />
+    <Compile Include="GenericOperation\Interfaces\IDinazorDeleteControl.cs" />
+    <Compile Include="GenericOperation\Interfaces\IDinazorDeleteManager.cs" />
+    <Compile Include="GenericOperation\Interfaces\IDinazorManager.cs" />
+    <Compile Include="GenericOperation\Interfaces\IDinazorOperation.cs" />
+    <Compile Include="GenericOperation\Interfaces\IDinazorPagingManager.cs" />
+    <Compile Include="GenericOperation\Interfaces\IDinazorPagingOperatation.cs" />
+    <Compile Include="GenericOperation\Interfaces\IDinazorRetrieveManager.cs" />
+    <Compile Include="GenericOperation\Interfaces\IDinazorSaveListManager.cs" />
+    <Compile Include="GenericOperation\Interfaces\IDinazorSaveManager.cs" />
+    <Compile Include="GenericOperation\Interfaces\IDinazorSelectWithJoinManager.cs" />
+    <Compile Include="GenericOperation\Interfaces\IDinazorUpdateManager.cs" />
+    <Compile Include="Interfaces\Databases\IMustHaveTenant.cs" />
+    <Compile Include="GenericOperation\Interfaces\IRetrieveOperation.cs" />
+    <Compile Include="GenericOperation\Interfaces\ISoftDeletableRetrieveOperation.cs" />
+    <Compile Include="Identity\BaseDinazorPrincipal.cs" />
+    <Compile Include="Identity\DinazorIdentity.cs" />
+    <Compile Include="Identity\DinazorPrincipal.cs" />
+    <Compile Include="Identity\IdentityHelper.cs" />
+    <Compile Include="Interceptor\Attribute\AuthorizationAttribute.cs" />
+    <Compile Include="Interceptor\Attribute\DinazorInterceptAttribute.cs" />
+    <Compile Include="Interceptor\Attribute\DinazorRequiredAttribute.cs" />
+    <Compile Include="Interceptor\Attribute\ExceptionHandlerAttribute.cs" />
+    <Compile Include="Interceptor\Attribute\InfoLoggerAttribute.cs" />
+    <Compile Include="Interceptor\Model\DinazorContextBound.cs" />
+    <Compile Include="Interceptor\Property\InterceptProperty.cs" />
+    <Compile Include="Interceptor\Property\InterceptSink.cs" />
+    <Compile Include="Interfaces\Configuration\IConfigurationManager.cs" />
+    <Compile Include="Interfaces\Configuration\IConfigurationOperation.cs" />
+    <Compile Include="Interfaces\Databases\IAuthorization.cs" />
+    <Compile Include="Interfaces\Databases\IDinazorDbContext.cs" />
+    <Compile Include="Interfaces\Databases\IEntity.cs" />
+    <Compile Include="Interfaces\Databases\ISoftDelete.cs" />
+    <Compile Include="Interfaces\Databases\Paging\IPagingConstructorBuilder.cs" />
+    <Compile Include="Interfaces\Databases\Paging\IPagingInstanceBuilder.cs" />
+    <Compile Include="Interfaces\Databases\Paging\IPagingPropertySorter.cs" />
+    <Compile Include="Interfaces\Databases\Paging\IPagingTypeBuilder.cs" />
+    <Compile Include="Interfaces\Gis\ICityManager.cs" />
+    <Compile Include="Interfaces\Gis\ICityOperation.cs" />
+    <Compile Include="Interfaces\Gis\ITownManager.cs" />
+    <Compile Include="Interfaces\Gis\ITownOperation.cs" />
+    <Compile Include="Interfaces\IoC\IConventionalDependencyRegistrar.cs" />
+    <Compile Include="Interfaces\IoC\IConventionalRegistrationContext.cs" />
+    <Compile Include="Interfaces\IoC\IDictionaryBasedConfig.cs" />
+    <Compile Include="Interfaces\IoC\IDinazorModuleManager.cs" />
+    <Compile Include="Interfaces\IoC\IIocManager.cs" />
+    <Compile Include="Interfaces\IoC\IIocRegistrar.cs" />
+    <Compile Include="Interfaces\IoC\IIocResolver.cs" />
+    <Compile Include="Interfaces\IoC\IIocScopedResolver.cs" />
+    <Compile Include="Interfaces\IoC\ISingletonDependency.cs" />
+    <Compile Include="Interfaces\IoC\ITransientDependency.cs" />
+    <Compile Include="Interfaces\Licence\IClientManager.cs" />
+    <Compile Include="Interfaces\Licence\IClientOperation.cs" />
+    <Compile Include="Interfaces\Licence\ILicenceManager.cs" />
+    <Compile Include="Interfaces\Licence\ILicenceOperation.cs" />
+    <Compile Include="Interfaces\Plugin\IDinazorPluginManager.cs" />
+    <Compile Include="Interfaces\Plugin\IPluginSource.cs" />
+    <Compile Include="Interfaces\Token\IAuthorizationOperation.cs" />
+    <Compile Include="Interfaces\Token\ITokenManager.cs" />
+    <Compile Include="Interfaces\Token\ITokenStore.cs" />
+    <Compile Include="Interfaces\User\IRelationalManager.cs" />
+    <Compile Include="Interfaces\User\IRelationalOperation.cs" />
+    <Compile Include="Interfaces\User\IRoleGroupManager.cs" />
+    <Compile Include="Interfaces\User\IRoleGroupOperation.cs" />
+    <Compile Include="Interfaces\User\IRoleManager.cs" />
+    <Compile Include="Interfaces\User\IRoleOperation.cs" />
+    <Compile Include="Interfaces\User\IUserGroupManager.cs" />
+    <Compile Include="Interfaces\User\IUserGroupOperation.cs" />
+    <Compile Include="Interfaces\User\IUserManager.cs" />
+    <Compile Include="Interfaces\User\IUserOperation.cs" />
+    <Compile Include="IoC\BasicConventionalRegistrar.cs" />
+    <Compile Include="IoC\ConventionalRegistrationConfig.cs" />
+    <Compile Include="IoC\ConventionalRegistrationContext.cs" />
+    <Compile Include="IoC\DictionaryBasedConfig.cs" />
+    <Compile Include="IoC\IocManager.cs" />
+    <Compile Include="IoC\IocScopedResolver.cs" />
+    <Compile Include="IoC\Module\DependsOnAttribute.cs" />
+    <Compile Include="IoC\Module\DinazorBootstrapper.cs" />
+    <Compile Include="IoC\Module\DinazorCoreInstaller.cs" />
+    <Compile Include="IoC\Module\DinazorModule.cs" />
+    <Compile Include="IoC\Module\DinazorModuleCollection.cs" />
+    <Compile Include="IoC\Module\DinazorModuleInfo.cs" />
+    <Compile Include="IoC\Module\DinazorModuleManager.cs" />
+    <Compile Include="IoC\SingletonDependency.cs" />
+    <Compile Include="IoC\WindsorDependencyResolver.cs" />
+    <Compile Include="IoC\WindsorDependencyScope.cs" />
+    <Compile Include="Localization\LocaleManager.cs" />
+    <Compile Include="Logger\Interface\ILoggerConfig.cs" />
+    <Compile Include="Logger\Manager\BasicLoggerConfig.cs" />
+    <Compile Include="Model\BaseTokenUser.cs" />
+    <Compile Include="Model\DinazorSaveListOption.cs" />
+    <Compile Include="Model\PagingReply.cs" />
+    <Compile Include="Model\PagingRequest.cs" />
+    <Compile Include="Observer\ILoginNotify.cs" />
+    <Compile Include="Observer\LoginSubscriber.cs" />
+    <Compile Include="Paging\DatatableSpecialCharacters.cs" />
+    <Compile Include="Paging\DatatableSqlFunctions.cs" />
+    <Compile Include="Plugin\DinazorPluginManager.cs" />
+    <Compile Include="Plugin\FolderPluginSource.cs" />
+    <Compile Include="Plugin\PluginSourceList.cs" />
+    <Compile Include="Plugin\PluginTypeListSource.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Resource.cs" />
+    <Compile Include="RestClient\DinazorRestClient.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ErrorMessages.en.resx" />
+    <EmbeddedResource Include="Resources\ErrorMessages.tr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

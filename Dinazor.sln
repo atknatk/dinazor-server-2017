@@ -1,0 +1,83 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Module", "Module", "{F7B29C07-2F05-4F71-A47C-17EF50BAEB1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dinazor.Module.UserManagement", "Codes\Module\Dinazor.Module.UserManagement\Dinazor.Module.UserManagement.csproj", "{4EA1C039-7154-4E91-8C87-E03F65C4538A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{21DEDC8B-0174-41D7-9BB5-8D35978D45EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dinazor.Module.AuthorizationManagement", "Codes\Module\Dinazor.Module.AuthorizationManagement\Dinazor.Module.AuthorizationManagement.csproj", "{BE9178A4-EBE3-4ADC-A935-35F8EF1CEEB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dinazor.Module.GisManagement", "Codes\Module\Dinazor.Module.GisManagement\Dinazor.Module.GisManagement.csproj", "{5272BF89-CBDE-4CCD-9136-559B9572E1BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{0DC072E8-39DA-487F-9E83-908F0A180E8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dinazor.Core", "Codes\Core\Dinazor.Core\Dinazor.Core.csproj", "{1C976950-2AF4-4941-89B1-8108C244A705}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dinazor.Module.LicenceManagement", "Codes\Module\Dinazor.Module.LicenceManagement\Dinazor.Module.LicenceManagement.csproj", "{CD50E143-16D3-4CBB-91B1-D1242D056438}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DinazorService", "Codes\Service\DinazorService\DinazorService.csproj", "{54365D0A-5744-4907-8AE2-9A9DAFA0F042}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dinazor.Module.ConfigurationManagement", "Codes\Module\Dinazor.Module.ConfigurationManagement\Dinazor.Module.ConfigurationManagement.csproj", "{D05E5030-9AA7-4649-B8E3-DCCB18BA3FE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dinazor.Module.NotificationManagement", "Codes\Module\Dinazor.Module.NotificationManagement\Dinazor.Module.NotificationManagement.csproj", "{9C6AB9F4-91D8-44C0-A043-FCD208806B40}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4EA1C039-7154-4E91-8C87-E03F65C4538A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EA1C039-7154-4E91-8C87-E03F65C4538A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EA1C039-7154-4E91-8C87-E03F65C4538A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EA1C039-7154-4E91-8C87-E03F65C4538A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE9178A4-EBE3-4ADC-A935-35F8EF1CEEB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE9178A4-EBE3-4ADC-A935-35F8EF1CEEB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE9178A4-EBE3-4ADC-A935-35F8EF1CEEB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE9178A4-EBE3-4ADC-A935-35F8EF1CEEB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5272BF89-CBDE-4CCD-9136-559B9572E1BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5272BF89-CBDE-4CCD-9136-559B9572E1BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5272BF89-CBDE-4CCD-9136-559B9572E1BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5272BF89-CBDE-4CCD-9136-559B9572E1BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C976950-2AF4-4941-89B1-8108C244A705}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C976950-2AF4-4941-89B1-8108C244A705}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C976950-2AF4-4941-89B1-8108C244A705}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C976950-2AF4-4941-89B1-8108C244A705}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD50E143-16D3-4CBB-91B1-D1242D056438}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD50E143-16D3-4CBB-91B1-D1242D056438}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD50E143-16D3-4CBB-91B1-D1242D056438}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD50E143-16D3-4CBB-91B1-D1242D056438}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54365D0A-5744-4907-8AE2-9A9DAFA0F042}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54365D0A-5744-4907-8AE2-9A9DAFA0F042}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54365D0A-5744-4907-8AE2-9A9DAFA0F042}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54365D0A-5744-4907-8AE2-9A9DAFA0F042}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D05E5030-9AA7-4649-B8E3-DCCB18BA3FE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D05E5030-9AA7-4649-B8E3-DCCB18BA3FE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D05E5030-9AA7-4649-B8E3-DCCB18BA3FE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D05E5030-9AA7-4649-B8E3-DCCB18BA3FE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C6AB9F4-91D8-44C0-A043-FCD208806B40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C6AB9F4-91D8-44C0-A043-FCD208806B40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C6AB9F4-91D8-44C0-A043-FCD208806B40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C6AB9F4-91D8-44C0-A043-FCD208806B40}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4EA1C039-7154-4E91-8C87-E03F65C4538A} = {F7B29C07-2F05-4F71-A47C-17EF50BAEB1D}
+		{BE9178A4-EBE3-4ADC-A935-35F8EF1CEEB3} = {F7B29C07-2F05-4F71-A47C-17EF50BAEB1D}
+		{5272BF89-CBDE-4CCD-9136-559B9572E1BE} = {F7B29C07-2F05-4F71-A47C-17EF50BAEB1D}
+		{1C976950-2AF4-4941-89B1-8108C244A705} = {0DC072E8-39DA-487F-9E83-908F0A180E8C}
+		{CD50E143-16D3-4CBB-91B1-D1242D056438} = {F7B29C07-2F05-4F71-A47C-17EF50BAEB1D}
+		{54365D0A-5744-4907-8AE2-9A9DAFA0F042} = {21DEDC8B-0174-41D7-9BB5-8D35978D45EE}
+		{D05E5030-9AA7-4649-B8E3-DCCB18BA3FE0} = {F7B29C07-2F05-4F71-A47C-17EF50BAEB1D}
+		{9C6AB9F4-91D8-44C0-A043-FCD208806B40} = {F7B29C07-2F05-4F71-A47C-17EF50BAEB1D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {50327E30-6D61-46C1-AE47-5CCA2E3D76B4}
+	EndGlobalSection
+EndGlobal
